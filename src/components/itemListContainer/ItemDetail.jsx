@@ -1,4 +1,4 @@
-import '../../../src/App.css'
+import "./itemDetail.css"
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import productsList from '../mock/products.mock'

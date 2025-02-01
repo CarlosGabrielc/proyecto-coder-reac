@@ -1,0 +1,52 @@
+/* .home-container{
+    padding-top: 4rem;
+}
+.home{
+    text-align: center;
+    padding-top: 1rem;
+    background-color: burlywood;
+} */
+/* Contenedor principal */
+.home-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+/* Estilo del texto con forma de nube */
+.home {
+    font-size:1rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+    background: rgba(255, 255, 255, 0.9); /* Blanco semitransparente */
+    padding: 30px 60px;
+    border-radius: 100px; /* Bordes redondeados para forma de nube */
+    
+    /* Sombra difusa para efecto nube */
+    box-shadow: 
+        10px 10px 30px rgba(0, 0, 0, 0.1),
+        -10px -10px 30px rgba(255, 255, 255, 0.5),
+        inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+    /* Efecto flotante */
+    display: inline-block;
+    animation: float 6s infinite ease-in-out alternate;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    50% {
+        transform: translateY(-15px) translateX(5px) scale(1.02);
+    }
+    100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+}
+

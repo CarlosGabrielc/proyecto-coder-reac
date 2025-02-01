@@ -1,0 +1,21 @@
+.cart-widget{
+    width: auto;
+    height: auto;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.cart-widget:hover {
+    background-color: #61dafb;
+  }
+  
+  .cart-widget h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+

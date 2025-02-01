@@ -1,4 +1,4 @@
-import '../../../src/App.css'
+import "./itemDetailContainer.css"
 import { useEffect, useState } from "react"
 import productsList from '../mock/products.mock'
 import Item from './Item'
@@ -9,7 +9,7 @@ function ItemDetailContainer() {
         setProducts(productsList)
     }, [])
 
-    //sirve para preentrega 2
+    
     return (
         <div >
             <h1 className='title'>Lista de productos</h1>

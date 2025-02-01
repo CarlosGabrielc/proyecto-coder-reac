@@ -1,11 +1,11 @@
 import { PiShoppingCartFill } from "react-icons/pi";
-import "./navbar.css"
+import "./cartWidget.css"
 
 const CartWidget = () => {
     return(
         <div className="cart-widget">
             
-            <PiShoppingCartFill size={30} color="white"/>
+            <PiShoppingCartFill size={50} color="white"/>
             <h2>2</h2>
         </div>
     )

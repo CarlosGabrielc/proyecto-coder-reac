@@ -35,7 +35,7 @@
 
 
 /* ItemDetailContainer */
-.container {
+/* .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,10 +71,10 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-}
+} */
 
 /* Item.jsx */
-.card {
+/* .card {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ffedbc;
@@ -122,11 +122,11 @@
 
 .card a:hover {
   background-color: #23527c;
-}
+} */
 
 /* ItemDetail.jsx */
 /* ItemDetail */
-.titleDetalle{
+/* .titleDetalle{
   text-align: center;
 }
 .imageDetalle{
@@ -146,7 +146,7 @@ margin-right: auto;
   background-color: rgb(235, 247, 252);
   transition: transform 0.3s ease-in-out;
   width: 500px; /* ajusta el ancho según sea necesario */
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out;
 }
 .cuerpoDetalle:hover {
   transform: translateY(-5px);
@@ -164,4 +164,4 @@ font-size: auto;
   text-align: center;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-size: 1rem;
-}
+} */ 
