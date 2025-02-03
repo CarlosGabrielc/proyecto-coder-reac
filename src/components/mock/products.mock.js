@@ -176,6 +176,15 @@ const productsList = [
     "stock": 3,
     "image": "https://b2b.multipoint.com.ar/Image/0/750_750-[global-version]-sm-s918_galaxys23ultra_front_phantomblack_221122.jpg"
   },
+  {
+    "id": 20,
+    "categoria": "Celulares",
+    "name":  "xiaomi note 9",
+    "description": "Smartphone con Snapdragon 8 Gen 2.",
+    "price": 899,
+    "stock": 3,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_989215-MLA75834275866_042024-O.webp"
+  },
 ]
 
 

@@ -11,7 +11,7 @@ body {
     position: fixed;
     /* Fija el navbar en la parte superior */
     top: 0;
-    left: 0;
+    left: -9px;
     width: 100%;
     height: 60px;
     /* Altura del navbar */

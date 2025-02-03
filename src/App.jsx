@@ -7,6 +7,7 @@ import ItemDetail from "./components/itemListContainer/ItemDetail";
 import Home from "./components/navbar/home";
 import NotFound from "./components/notFound/NotFound";
 import Category from "./components/navbar/Category";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Productos/:categoryId" element={<Category />} />
         <Route path="/Productos" element={<ItemDetailContainer />} />
         <Route path="/item/:id" element={<ItemDetail />} />
+        <Route path="/Contacto" element={<ContactForm />} />
 
 
         {/*Ruta pora 404  */}
