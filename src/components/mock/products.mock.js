@@ -185,6 +185,7 @@ const productsList = [
     "stock": 3,
     "image": "https://http2.mlstatic.com/D_NQ_NP_989215-MLA75834275866_042024-O.webp"
   },
+  
 ]
 
 

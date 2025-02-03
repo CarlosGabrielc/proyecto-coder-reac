@@ -28,6 +28,8 @@ const ContactForm = () => {
   }
 
   return (
+    <>
+   
     <div className="contact-form-container">
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-group">
@@ -54,7 +56,12 @@ const ContactForm = () => {
       </form>
       {status && <p className="status-message">{status}</p>}
     </div>
+    <h1>
+    holaa
+  </h1>
+  </>
   )
+  
 }
 
 export default ContactForm
