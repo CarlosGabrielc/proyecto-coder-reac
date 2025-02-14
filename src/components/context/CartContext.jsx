@@ -1,4 +1,3 @@
-//agregado con chatgpt
 
 import { createContext, useState } from "react";
 

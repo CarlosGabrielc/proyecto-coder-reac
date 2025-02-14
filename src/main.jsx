@@ -30,8 +30,8 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
 createRoot(document.getElementById('root')).render(
-  // <StrictMode>
+
     <App />
-  // </StrictMode>
-  ,
+ 
+  
 )

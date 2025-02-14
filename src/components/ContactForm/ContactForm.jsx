@@ -1,6 +1,3 @@
-// service_8q4f39f
-// 412Gmail_API: Request had insufficient authentication scopes.
-
 
 import { useState, useRef } from "react"
 import emailjs from "@emailjs/browser"

@@ -1,12 +1,4 @@
-/* .home-container{
-    padding-top: 4rem;
-}
-.home{
-    text-align: center;
-    padding-top: 1rem;
-    background-color: burlywood;
-} */
-/* Contenedor principal */
+
 .home-container {
     text-align: center;
     display: flex;
