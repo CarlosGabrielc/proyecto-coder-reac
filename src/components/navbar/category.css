@@ -1,16 +1,119 @@
-.category {
-  position: absolute;
-  top: 90px; /* altura del navbar */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #221313;
-  background-color: hsl(0, 17%, 92%);
+.category-container {
   padding: 20px;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-buttons button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background: #f0f0f0;
+}
+
+.category-buttons button.active {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Estilos tomados de ItemDetail.css */
+.titleDetalle {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  z-index: 10;
+}
+
+.imageDetalle {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cuerpoDetalle {
+  margin: 20px auto;
+  padding: 1.5rem;
+  border: 1px solid #ffedbc;
   border-radius: 10px;
-  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.1);
-  width: 50%;
-  height: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  text-align: center;
+  background-color: rgb(235, 247, 252);
+  width: 80%;
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.nameDetalle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.descriptionDetalle {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.priceDetalle {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e9ecef;
+  transform: translateX(-5px);
 }

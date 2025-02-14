@@ -1,4 +1,4 @@
-.cart-widget{
+/* .cart-widget{
     width: auto;
     height: auto;
     color: black;
@@ -17,5 +17,29 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-  }
+  } */
 
+  .cart-widget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cart-widget h2 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cart-widget svg {
+    width: 50px;
+    height: auto;
+  }
+  

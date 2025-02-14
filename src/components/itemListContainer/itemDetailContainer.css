@@ -1,39 +1,58 @@
-/* ItemDetailContainer */
+
+   /* ItemDetailContainer */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .title {
-    text-align: center;
-    padding-top: 4rem;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los productos en la fila */
+  align-items: center;
+  max-width: 1200px; /* Aumento el max-width para que más productos encajen horizontalmente */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+  margin: 10px; /* Espacio entre las tarjetas */
+  padding: 20px;
+  border: 1px solid #ffedbc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: rgb(235, 247, 252);
+  transition: transform 0.3s ease-in-out;
+  width: calc(25% - 20px); /* 4 tarjetas por fila: 100% / 4 = 25% */
+  box-sizing: border-box; /* Para asegurar que el margin y padding se respeten correctamente */
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Responsividad para pantallas más pequeñas */
+
+/* En pantallas medianas, se muestran 2 productos por fila */
+@media screen and (max-width: 768px) {
   .card {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ffedbc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    text-align: center;
-    background-color: rgb(235, 247, 252);
-    transition: transform 0.3s ease-in-out;
-    width: calc(33.33% - 20px);
+      width: calc(50% - 20px);
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* En pantallas pequeñas, se muestra 1 producto por fila */
+@media screen and (max-width: 480px) {
+  .card {
+      width: 100%;
   }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
+}

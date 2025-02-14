@@ -56,9 +56,6 @@ const ContactForm = () => {
       </form>
       {status && <p className="status-message">{status}</p>}
     </div>
-    <h1>
-    holaa
-  </h1>
   </>
   )
   

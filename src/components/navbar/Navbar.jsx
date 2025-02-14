@@ -10,7 +10,7 @@ const Navbar = () => {
 
     <nav className="navbar">
       <div className="navbar-content">
-        <h1 className="navbar-logo">Titulo</h1>
+        <h1 className="navbar-logo">Conamore</h1>
         <ul className="navbar-menu">
           <li><Link to={'/Home'}>Inicio</Link></li>
           <li><Link to={'/Productos'}>Todos los Productos</Link></li>

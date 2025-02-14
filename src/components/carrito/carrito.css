@@ -1,0 +1,214 @@
+
+
+/* Estilos generales del carrito */
+.carrito-container {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* Título */
+  .carrito-title {
+    padding-top: 1.5rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Lista de productos */
+  .carrito-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Elementos de cada producto */
+  .carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carrito-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  .carrito-item-details {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #555;
+  }
+  .carrito-item-details strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  
+  /* Botón para eliminar */
+  .carrito-item-remove {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .carrito-item-remove:hover {
+    background-color: #ff2b2b;
+  }
+  
+  /* Total del carrito */
+  .carrito-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  /* Botón de comprar */
+  .carrito-buy-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .carrito-buy-button:hover {
+    background-color: #218838;
+  }
+  
+  .carrito-buy-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Botón de vaciar carrito */
+  .carrito-clear-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carrito-clear-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Mensajes de compra exitosa o carrito vacío */
+  .compraExitosa, .carritoVacio {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .compraExitosa {
+    background-color: #28a745;
+  }
+  
+  .carritoVacio {
+    background-color: #ff4c4c;
+  }
+  
+  .compra-exitosa {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    background-color: #d4edda;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 90%;
+    z-index: 1000;
+}
+
+.compra-exitosa h2 {
+    color: #155724;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.compra-exitosa  {
+    margin: 15px 0;
+    font-size: 1.1em;
+    color: #2d7a3c;
+}
+
+.compra-exitosa strong {
+    display: block;
+    font-size: 1.4em;
+    color: #28a745;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 15px auto;
+    max-width: 300px;
+    border: 2px solid #28a745;
+}
+.mensaje-whatsapp{
+  background-color:whitesmoke;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+
+}
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button i {
+  font-size: 1.2em;
+}

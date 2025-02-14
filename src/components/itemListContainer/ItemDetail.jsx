@@ -1,39 +1,76 @@
-import "./itemDetail.css"
-import { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import productsList from '../mock/products.mock'
-function ItemDetail() {
-  const { id } = useParams()
-  console.log(id);
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ItemCount from "./ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import "./itemDetail.css";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../../main.jsx';
 
-  const [product, setProduct] = useState({})
+function ItemDetail() {
+  const { id } = useParams();
+  const { addToCart } = useContext(CartContext);
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [alertMessage, setAlertMessage] = useState("");
 
   useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const docRef = doc(db, "items", id);
+        const docSnap = await getDoc(docRef);
+        
+        if (docSnap.exists()) {
+          setProduct({
+            id: docSnap.id,
+            ...docSnap.data()
+          });
+        } else {
+          console.log("No existe el producto!");
+        }
+      } catch (error) {
+        console.error("Error al obtener el producto:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    const findProduct = productsList.find(
-      (product) => product.id === parseInt(id)
-    );
-    setProduct(findProduct);
-  }, [id])
+    getProduct();
+  }, [id]);
 
+  function handleCarrito(cantidad) {
+    if (product) {
+      addToCart(product, cantidad);
+      setAlertMessage(`Agregaste ${cantidad} ${product.name} al carrito`);
+      setTimeout(() => {
+        setAlertMessage("");
+      }, 4500);
+    }
+  }
 
+  if (loading) {
+    return <div>Cargando producto...</div>;
+  }
 
+  if (!product) {
+    return <div>Producto no encontrado</div>;
+  }
 
   return (
     <div>
-      <h2 className='titleDetalle'>Detalle del producto</h2>
-      <hr />
-
-
-      <img className='imageDetalle' src={product.image} alt="" />
-      <div className='cuerpoDetalle'>
-        <h3 className='nameDetalle'>{product.name}</h3>
-        <p className='descriptionDetalle'>{product.description} </p>
-        <p className='priceDetalle'>{product.price} </p>
+      <h1 className="titleDetalle">{product.name}</h1>
+      <div className="cuerpoDetalle">
+        <img className="imageDetalle" src={product.image} alt={product.name} />
+        <div>
+          <h2 className="nameDetalle">{product.name}</h2>
+          <p className="descriptionDetalle">{product.description}</p>
+          <p className="priceDetalle">Precio: ${product.price}</p>
+          <ItemCount stock={product.stock} onAdd={handleCarrito} />
+        </div>
       </div>
-
+      {alertMessage && <div className="alertMessage">{alertMessage}</div>}
     </div>
-  )
+  );
 }
 
-export default ItemDetail
+export default ItemDetail;

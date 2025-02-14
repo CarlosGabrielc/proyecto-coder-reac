@@ -2,7 +2,7 @@ const productsList = [
   // Perfumes arabaes
   {
     "id": 1,
-    "category": "Oud",
+    "category": "Perfumes",
     "name": "Amber Oud Gold Edition",
     "description": "Una fragancia unisex con notas de bergamota, melón, piña y ámbar, que ofrece una experiencia olfativa lujosa y duradera.",
     "price": "85.00",
@@ -11,7 +11,7 @@ const productsList = [
   },
   {
     "id": 2,
-    "category": "Floral",
+    "category": "Perfumes",
     "name": "Yara Lattafa",
     "description": "Perfume femenino con aroma dulce y tropical, combinando notas de mandarina, orquídea, frutas tropicales, vainilla y sándalo.",
     "price": "25.00",
@@ -20,7 +20,7 @@ const productsList = [
   },
   {
     "id": 3,
-    "category": "Especiado",
+    "category": "Perfumes",
     "name": "Hawas for Him",
     "description": "Una fragancia masculina que mezcla notas de canela, bergamota, naranja y ámbar gris, ofreciendo un aroma fresco y especiado.",
     "price": "60.00",
@@ -29,7 +29,7 @@ const productsList = [
   },
   {
     "id": 4,
-    "category": "Amaderado",
+    "category": "Perfumes",
     "name": "Kashkha",
     "description": "Perfume unisex con una mezcla de notas amaderadas y especiadas, incluyendo manzana, canela, cardamomo y almizcle.",
     "price": "45.00",
@@ -38,7 +38,7 @@ const productsList = [
   },
   {
     "id": 5,
-    "category": "Dulce",
+    "category": "Perfumes",
     "name": "Amaali",
     "description": "Fragancia femenina que combina notas de frutas, flores y almizcle, creando un aroma dulce y seductor.",
     "price": "35.00",
@@ -47,7 +47,7 @@ const productsList = [
   },
   {
     "id": 6,
-    "category": "Oud",
+    "category": "Perfumes",
     "name": "Shaghaf Oud Aswad",
     "description": "Una intensa fragancia unisex con notas de oud, azafrán, vainilla y cuero, ofreciendo una experiencia rica y profunda.",
     "price": "70.00",
@@ -56,7 +56,7 @@ const productsList = [
   },
   {
     "id": 7,
-    "category": "Amaderado",
+    "category": "Perfumes",
     "name": "Arabian Nights Gold",
     "description": "Perfume unisex que mezcla notas de oud, ámbar y especias, evocando la esencia de las noches árabes.",
     "price": "90.00",
@@ -65,7 +65,7 @@ const productsList = [
   },
   {
     "id": 8,
-    "category": "Floral",
+    "category": "Perfumes",
     "name": "Aurum Summer",
     "description": "Fragancia femenina con una mezcla vibrante de flores y frutas, perfecta para el verano.",
     "price": "50.00",
@@ -74,7 +74,7 @@ const productsList = [
   },
   {
     "id": 9,
-    "category": "Especiado",
+    "category": "Perfumes",
     "name": "Black Oud",
     "description": "Perfume unisex que combina notas de oud, especias y maderas oscuras, creando un aroma misterioso y profundo.",
     "price": "65.00",
@@ -83,17 +83,17 @@ const productsList = [
   },
   {
     "id": 10,
-    "category": "Dulce",
+    "category": "Perfumes",
     "name": "Wisal Dhahab",
     "description": "Fragancia unisex con notas de frutas, flores y almizcle, ofreciendo un aroma dulce y refrescante.",
     "price": "55.00",
     "stock": 13,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0a1z01-NAsBHA7XDNDm-WpEfI85Q44c5uUg&s"
   },
-    // Electrodomésticos
-    {
+  // Electrodomésticos
+  {
     "id": 11,
-    "categoria": "Electrodomésticos",
+    "category": "Electrodomésticos",
     "name": "Heladera Whirlpool 300L",
     "description": "Heladera con freezer de 300L, tecnología no frost.",
     "price": 750,
@@ -102,7 +102,7 @@ const productsList = [
   },
   {
     "id": 12,
-    "categoria": "Electrodomésticos",
+    "category": "Electrodomésticos",
     "name": "Microondas Samsung 23L",
     "description": "Microondas con grill y control digital.",
     "price": 120,
@@ -111,7 +111,7 @@ const productsList = [
   },
   {
     "id": 13,
-    "categoria": "Electrodomésticos",
+    "category": "Electrodomésticos",
     "name": "Lavarropas LG 8kg",
     "description": "Lavarropas automático con 10 programas de lavado.",
     "price": 500,
@@ -120,7 +120,7 @@ const productsList = [
   },
   {
     "id": 14,
-    "categoria": "Electrodomésticos",
+    "category": "Electrodomésticos",
     "name": "Aire Acondicionado Split 3000W",
     "description": "Aire acondicionado frío/calor de 3000W.",
     "price": 600,
@@ -129,7 +129,7 @@ const productsList = [
   },
   {
     "id": 15,
-    "categoria": "Electrodomésticos",
+    "category": "Electrodomésticos",
     "name": "Cafetera Nespresso",
     "description": "Cafetera automática para cápsulas Nespresso.",
     "price": 200,
@@ -140,7 +140,7 @@ const productsList = [
   // Smartwatches
   {
     "id": 16,
-    "categoria": "Smartwatches",
+    "category": "Smartwatches",
     "name": "Apple Watch Series 9",
     "description": "Reloj inteligente con GPS y pantalla Always-On.",
     "price": 399,
@@ -149,7 +149,7 @@ const productsList = [
   },
   {
     "id": 17,
-    "categoria": "Smartwatches",
+    "category": "Smartwatches",
     "name": "Samsung Galaxy Watch 6",
     "description": "Smartwatch con monitoreo de salud y carga rápida.",
     "price": 350,
@@ -160,7 +160,7 @@ const productsList = [
   // Celulares
   {
     "id": 18,
-    "categoria": "Celulares",
+    "category": "Celulares",
     "name": "iPhone 14 Pro",
     "description": "Celular con chip A16 Bionic y cámara de 48 MP.",
     "price": 999,
@@ -169,7 +169,7 @@ const productsList = [
   },
   {
     "id": 19,
-    "categoria": "Celulares",
+    "category": "Celulares",
     "name": "Samsung Galaxy S23",
     "description": "Smartphone con Snapdragon 8 Gen 2.",
     "price": 899,
@@ -178,14 +178,14 @@ const productsList = [
   },
   {
     "id": 20,
-    "categoria": "Celulares",
-    "name":  "xiaomi note 9",
+    "category": "Celulares",
+    "name": "xiaomi note 9",
     "description": "Smartphone con Snapdragon 8 Gen 2.",
     "price": 899,
     "stock": 3,
     "image": "https://http2.mlstatic.com/D_NQ_NP_989215-MLA75834275866_042024-O.webp"
   },
-  
+
 ]
 
 

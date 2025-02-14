@@ -1,40 +1,99 @@
 /* ItemDetail */
-.titleDetalle{
-    text-align: center;
-  }
-  .imageDetalle{
-    width: 400px;
+.titleDetalle {
+  text-align: center;
+  padding-top: 4rem; /* Ajustamos el padding superior para mejor visibilidad */
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* Reducimos el margen inferior para más espacio */
+  color: #333; /* Aseguramos que el color del texto sea visible */
+  z-index: 10; /* Aseguramos que esté por encima de otros elementos */
+}
+
+.imageDetalle {
+  width: 100%;
+  max-width: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  }
-  .cuerpoDetalle {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ffedbc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: block;
-    text-align: center;
-    background-color: rgb(235, 247, 252);
-    transition: transform 0.3s ease-in-out;
-    width: 500px; /* ajusta el ancho según sea necesario */
-    transition: transform 0.3s ease-in-out;
-  }
-  .cuerpoDetalle:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  .nameDetalle{
-    text-align: center;
-  }
-  .descriptionDetalle{
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cuerpoDetalle {
+  margin: 20px auto;
+  padding: 1.5rem;
+  border: 1px solid #ffedbc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-  font-size: auto;
+  background-color: rgb(235, 247, 252);
+  width: 80%;
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1; /* Aseguramos que esté debajo del título */
+}
+
+.nameDetalle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.descriptionDetalle {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.priceDetalle {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.alertMessage {
+  position: fixed;
+  top: 40px; /* Ajusta el valor según el espacio que deseas encima del navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff; /* Azul típico de los alertas */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999; /* Asegura que esté encima de otros elementos */
+  opacity: 0;
+  animation: fadeInOut 5s forwards; /* Anima el cartel */
+}
+
+@keyframes fadeInOut {
+  0% {
+    top: -60px; /* Empieza fuera de la pantalla */
+    opacity: 0;
   }
-  .priceDetalle{
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    font-size: 1rem;
+  25% {
+    top: 20px; /* Se desplaza hasta quedar justo debajo del navbar */
+    opacity: 1;
   }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -60px; /* Se vuelve a desplazar hacia arriba después de 3 segundos */
+    opacity: 0;
+  }
+}
+
+body {
+  overflow-x: hidden; /* Evitar scroll horizontal si hay algún elemento fuera de pantalla */
+  margin: 0;
+  padding: 0;
+}
