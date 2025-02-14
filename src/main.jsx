@@ -7,6 +7,15 @@ import App from './App.jsx'
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyAYaa-Yhb2wrcHx9yAr2TNf3-dcxxi0odI",
+//   authDomain: "proyecto-react-coderhous-91888.firebaseapp.com",
+//   projectId: "proyecto-react-coderhous-91888",
+//   storageBucket: "proyecto-react-coderhous-91888.firebasestorage.app",
+//   messagingSenderId: "520712076065",
+//   appId: "1:520712076065:web:0673137cc3501f7f3e9c60",
+//   measurementId: "G-VT30NHH21E"
+// };
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
   authDomain: import.meta.env.VITE_AUTH_DOMAIN,
